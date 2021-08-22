@@ -1,0 +1,29 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+            <input type="text" [(ngModel)]="property.title" id="title" class="fadeIn first" name="login"
+                placeholder="Title">
+            <input type="text" [(ngModel)]="property.type" id="type" class="fadeIn second" name="login"
+                placeholder="Type">
+            <input type="text" [(ngModel)]="property.province" id="province" class="fadeIn third" name="login"
+                placeholder="Province">
+            <input type="text" [(ngModel)]="property.city" id="city" class="fadeIn fifth" name="login"
+                placeholder="City">
+            <input type="text" [(ngModel)]="property.address" id="address" class="fadeIn sixth" name="login"
+                placeholder="Address">
+            <input type="text" [(ngModel)]="property.meters" id="meters" class="fadeIn seventh" name="login"
+                placeholder="Meters">
+            <input type="text" [(ngModel)]="property.price" id="price" class="fadeIn eighth" name="login"
+                placeholder="Price">
+            <input type="text" [(ngModel)]="property.deal" id="deal" class="fadeIn ninth" name="login"
+                placeholder="Deal">
+            <input type="text" [(ngModel)]="property.description" id="description" class="fadeIn tenth" name="login"
+                placeholder="Description">
+            <input type="submit" (click)="DoList()" class="fadeIn eleventh" value="List">
+        </form>
+        <div id="formFooter">
+            <a class="underlineHover" routerLink="/dashboard/listing" routerLinkActive="active">Go back to previous
+                page.</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="d-flex justify-content-center">
+  <a class="btn btn-danger w-50" routerLink="/list">List</a>
+</div>
+
+<div *ngFor="let property of properties">
+  <div class="container">
+    <div class="mylist ">
+      <p>ID: {{property.ID}} </p>
+      <p>Title: {{property.Title}} </p>
+      <p>Username: {{property.Username}} </p>
+      <p>Phone: {{property.Phone}} </p>
+      <p>Province: {{property.Province}} </p>
+      <p>City: {{property.City}} </p>
+      <p>Price: {{property.Price}} </p>
+      <a class="btn btn-outline-danger text-danger w-100" (click)="DoDelete(property.ID)">Delete</a>
+    </div>
+  </div>
+</div>

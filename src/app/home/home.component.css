@@ -1,0 +1,9 @@
+.mylist {
+    background-color: #23272a;
+    color: whitesmoke;
+    border-radius: 9px;
+    padding: 15px 20px 5px;
+    margin: 10px;
+    float: left;
+    width: 44%;
+}

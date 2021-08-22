@@ -1,0 +1,17 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+            <input type="text" [(ngModel)]="user.firstname" id="firstname" class="fadeIn first" name="login" placeholder="Firstname">
+            <input type="text" [(ngModel)]="user.lastname" id="lastname" class="fadeIn second" name="login" placeholder="Lastname">
+            <input type="text" [(ngModel)]="user.username" id="username" class="fadeIn third" name="login" placeholder="Username">
+            <input type="text" [(ngModel)]="user.password" id="password" class="fadeIn fourth" name="login" placeholder="Password">
+            <input type="text" [(ngModel)]="user.phone" id="phone" class="fadeIn fifth" name="login" placeholder="Phone">
+            <input type="submit" (click)="DoRegister()" class="fadeIn sixth" value="Register">
+        </form>
+        <div id="formFooter">
+            <a class="underlineHover" routerLink="/login" routerLinkActive="active">Already got an account?</a>
+            <br>
+            <a class="underlineHover" routerLink="/dashboard" routerLinkActive="active">Go back to main page.</a>
+        </div>
+    </div>
+</div>
